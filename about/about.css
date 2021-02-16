@@ -1,0 +1,87 @@
+cursor {
+    color: var(--bg);
+    position: relative;
+    font-size: 20vw;
+    line-height: 100vh;
+    margin: 0;
+    pointer-events: none;
+}
+ul.nav-links li a:hover:not(.active) {background-color: transparent;}
+
+.nav-links li {
+    font-family: 'Montserrat', sans-serif;
+    cursor: none;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--fg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: none;
+}
+
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+    transform-origin: 100% 100%;
+    transition: all 0.4s ease;
+    transition-property: background, transform;
+}
+
+.link-grow {
+    transform: scale(2);
+    background: black;
+}
+
+.hover {
+    filter: invert(1);
+}
+
+
+.about-me{
+    position:fixed;
+}
+
+
+.about-me-text {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+}
+
+.swig {
+    top: 0%;
+    left:0%;
+    z-index: 5;
+}
+
+.headshot {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+} 
+
+@media screen and (max-width: 900px) {
+    .about {
+        background: url(./images/commercial/swig_bright.png);
+    }
+    .swig, .headshot, .about-logo {
+        visibility: hidden;
+    }
+    .about-me-text {
+        font-weight: lighter;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+    }
+}

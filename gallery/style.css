@@ -1,0 +1,263 @@
+:root { font-size: 16px }
+@media (max-width: 500px) { :root { font-size: 14px } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+::-moz-selection {
+  background: #87cd33;
+  color: black;
+}
+
+::selection {
+  background: #87cd33;
+  color: black;
+}
+
+
+/* *********FOR CURSOR********** */
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+  transform-origin: 100% 100%;
+  transition: all 0.4s ease;
+  transition-property: background, transform;
+}
+
+.link-grow {
+  transform: scale(3);
+  background: white;
+}
+
+.hover {
+  filter: invert(1);
+}
+
+/* ************ */
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 10vh;
+    align-items: center;
+    margin: auto;
+    left: 0%;
+}
+
+.nav-links {
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    float:left;
+    position:relative;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* ******************* */
+
+body {
+  overflow: hidden;
+  font-family: 'Lexend Mega', sans-serif;
+
+  color: white;
+  background-color: black;
+
+}
+
+h1 { font-size: 5rem }
+h2 { font-size: 2rem }
+
+img {
+  width: 100%;
+  height: auto;
+  background: black;
+}
+
+ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+li {
+  flex-shrink: 0;
+  width: clamp(500px, 60vw, 800px);
+  padding-right: 1rem;
+}
+
+header {height: 100vh}
+footer {height: 50vh}
+
+:-webkit-any-link { color: white; }
+
+:-moz-any-link { color: white; }
+
+:any-link { color: white; }
+
+.df {display: flex}
+.aic {align-items: center}
+.jcc {justify-content: center}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255, 251, 0);
+  color: rgb(92, 91, 91);
+}
+
+.demo-wrapper {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.demo-gallery:not(.last) {
+  padding-bottom: 1rem;
+}
+
+.demo-text .text {
+  font-size: clamp(8rem, 15vw, 16rem);
+  line-height: 1;
+  font-weight: 900;
+}
+
+button {
+    cursor: none;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    margin-bottom: 3rem;
+    width: 10rem;
+    padding: 1rem 0rem;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Lexend Mega', sans-serif;
+  }
+
+.to-top {
+  cursor: none;
+}
+
+  /* ****** carousel ****** */
+
+h1,
+p {
+  text-align: center;
+}
+p {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contain {
+  width: 100%;
+}
+.row {
+  overflow: scroll;
+  width: 100%;
+}
+.row__inner {
+  transition: 450ms transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 70.3125px 0;
+  padding-bottom: 10px;
+}
+.tile {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 140.625px;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: 450ms all;
+  transform-origin: center left;
+}
+.tile__img {
+  width: 250px;
+  height: 140.625px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tile__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+}
+.tile__details:after,
+.tile__details:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: #000;
+}
+.tile__details:after {
+  margin-top: -25px;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ecf0f1;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.tile:hover .tile__details {
+  opacity: 1;
+}
+.tile__title {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.row__inner:hover {
+  transform: translate3d(-62.5px, 0, 0);
+}
+.row__inner:hover .tile {
+  opacity: 0.3;
+}
+.row__inner:hover .tile:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.tile:hover ~ .tile {
+  transform: translate3d(125px, 0, 0);
+}

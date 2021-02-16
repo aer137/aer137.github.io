@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+img {
+  width: 100%;
+  height: inherit;
+}
+canvas{
+    z-index: 50;
+}
+button{
+    position: absolute;
+    z-index: 100;
+    bottom: 5.5%;
+    right: 13%;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.logo {
+    font-family: 'Lexend Mega', sans-serif;
+
+}
+
+.clear {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    z-index: 100;
+    bottom: 5.5%;
+    right: 13%;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+.landing {
+    max-height: 10vh;
+    background: url(./images/commercial/lobby.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    padding: 0rem 5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+
+ul.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+ul.nav-links li {float: right;}
+  
+ul.nav-links li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: none;
+
+}
+  
+ul.nav-links li a:hover:not(.active) {background-color: rgb(255, 136, 0);}
+
+ul.nav-links li a.active {background-color: #4CAF50;}
+  
+@media screen and (max-width: 875px) {
+    ul.nav-links {
+        display: block;
+        float: none; 
+        position:absolute;
+        top: 10%;
+        left: 10%;
+    }
+}
