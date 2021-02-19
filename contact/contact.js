@@ -1,4 +1,4 @@
-let txt = ['505.239.1156', 'OLSEN INC.', 'ejodakini@gmail.com'];
+let txt = ['505.239.1156', 'OLSEN INC.', 'beth@oincdesign.com'];
 let i=0;
 let userArray = [];
 
