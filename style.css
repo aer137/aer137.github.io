@@ -43,7 +43,7 @@ ul.nav-links li a {
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px;
     text-decoration: none;
     cursor: none;
 
@@ -53,13 +53,13 @@ ul.nav-links li a:hover:not(.active) {background-color: rgb(255, 136, 0);}
 
 ul.nav-links li a.active {background-color: #4CAF50;}
   
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 530px) {
     ul.nav-links {
-        display: block;
+        /* display: block;
         float: none; 
-        position:absolute;
-        top: 10%;
-        left: 10%;
+        position:absolute; */
+        /* top: 0%; */
+        left: 0%;
     }
 }
 

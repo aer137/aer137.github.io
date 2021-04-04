@@ -10,6 +10,7 @@ img {
 }
 canvas{
     z-index: 50;
+    background: yellow;
 }
 button{
     position: absolute;
@@ -37,13 +38,14 @@ button{
 main {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
+    background: rgb(255, 196, 0);
+
 }
 
 .landing {
     max-height: 10vh;
-    background: url(./images/commercial/lobby.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
     background-size: 500px 500px;
     padding: 0rem 5rem;
 }
@@ -68,7 +70,9 @@ ul.nav-links li a {
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
+    /* padding: 12px; */
+
     text-decoration: none;
     cursor: none;
 
@@ -80,10 +84,10 @@ ul.nav-links li a.active {background-color: #4CAF50;}
   
 @media screen and (max-width: 875px) {
     ul.nav-links {
-        display: block;
+        /* display: block;
         float: none; 
         position:absolute;
         top: 10%;
-        left: 10%;
+        left: 10%; */
     }
 }
