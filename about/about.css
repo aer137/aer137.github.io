@@ -16,8 +16,8 @@ ul.nav-links li a:hover:not(.active) {background-color: transparent;}
 body {
     min-height: 100vh;
     /* background: var(--fg); */
-
-    background: url(../images/commercial/swig_bright.png);
+    /* background-repeat:; */
+    /* background-size:cover; */
     display: flex;
     justify-content: center;
     align-items: center;
