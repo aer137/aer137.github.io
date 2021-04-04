@@ -15,7 +15,9 @@ ul.nav-links li a:hover:not(.active) {background-color: transparent;}
 
 body {
     min-height: 100vh;
-    background: var(--fg);
+    /* background: var(--fg); */
+
+    background: url(../images/commercial/swig_bright.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +57,10 @@ body {
 .about-me-text {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
-    left: 40%;
+    color: white;
+    background: rgb(0, 0, 0);
+    padding: 1rem;
+    left: 0%;
     top: 0%;
 }
 
@@ -72,8 +77,8 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .about {
-        background: url(./images/commercial/swig_bright.png);
+    body {
+        background: url(../images/commercial/swig_bright.png);
     }
     .swig, .headshot, .about-logo {
         visibility: hidden;
@@ -83,5 +88,7 @@ body {
         position: absolute;
         left: 0%;
         top: 0%;
+        /* background: url(../images/commercial/swig_bright.png); */
+
     }
 }
